@@ -834,12 +834,14 @@ class GotBarChart {
       .attr('y', -7)
       .text('Deaths in All Regions')
       .style('font-size', '15px')
+      .attr('transform', 'translate(-14,-5)')
       .attr('alignment-baseline', 'middle');
     redbarsG
       .append('text')
       .attr('x', 68)
       .attr('y', -7)
       .text('Deaths in ')
+      .attr('transform', 'translate(-14,-5)')
       .style('font-size', '15px')
       .attr('alignment-baseline', 'middle');
     redbarsG
@@ -847,6 +849,7 @@ class GotBarChart {
       .attr('x', 150)
       .attr('y', -7)
       .text(region)
+      .attr('transform', 'translate(-14,-5)')
       .attr('alignment-baseline', 'middle')
       .attr('class', 'regionText');
   }

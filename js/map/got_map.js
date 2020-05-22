@@ -2,7 +2,7 @@ class GotMap {
   constructor(_config) {
     this.config = {
       parentElement: _config.parentElement,
-      containerWidth: _config.containerWidth || 600,
+      containerWidth: _config.containerWidth || 650,
       containerHeight: _config.containerHeight || 700,
     };
     this.initVis();
@@ -20,7 +20,7 @@ class GotMap {
       .append('g')
       .attr(
         'transform',
-        'translate(-600,-700), scale(0.6,0.6), rotate(64 0 0)'
+        'translate(-450,-700), scale(0.6,0.6), rotate(64 0 0)'
       );
 
     // Initialize a geographic path generator
@@ -233,7 +233,7 @@ class GotMap {
     // add legend text
     var legendHeader = vis.svg.append('g');
     legendHeader
-      .attr('transform', `translate(50,650)`)
+      .attr('transform', `translate(90,675)`)
       .attr('class', 'legend-text')
       .append('text')
       .text('Death Count')
@@ -241,7 +241,7 @@ class GotMap {
 
     var legendRulingHeader = vis.svg.append('g');
     legendRulingHeader
-      .attr('transform', `translate(350,650)`)
+      .attr('transform', `translate(415,675)`)
       .attr('class', 'legend-text')
       .append('text')
       .text('Ruling House')

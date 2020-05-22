@@ -6,7 +6,7 @@ class NodeDiagram {
       legendWidth: _config.legendWidth || 200,
       legendHeight: _config.legendHeight || 300,
       legendMargin: _config.legendMargin || { top: 40, left: 25 },
-      containerWidth: _config.containerWidth || 1000,
+      containerWidth: _config.containerWidth || 1100,
       containerHeight: _config.containerHeight || 600,
       margin: _config.margin || { top: 0, bottom: 0, right: 0, left: 0 },
       nodeRadius: 25,
