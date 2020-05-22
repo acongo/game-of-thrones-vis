@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GOT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Game of Thrones Death Watch</h1>
+  <h3>The television series Game of Thrones is no stranger to death. Even characters that appear integral
+    to plot progression may be unexpectedly killed off in the most brutal of ways. Here you can explore
+    how many characters died in each location across the seasons of the show (press the "Play" button for
+    a season-by-season animation). You can further explore the distribution of deaths per allegiance within
+    a particular map region by clicking on a region name on the Westeros map. Don't forget to check out the Game of
+    Thrones Kill Graph!</h3>
+  <div class="kill-graph">
+    <button onclick="window.location.href = '/got_node_diagram.html'" id="link-button">Explore the Game of Thrones Kill
+      Graph</button>
+  </div>
+
+  <div class="slider">
+    <label id="season" for="selectSlider">Season</label>
+    <input type="range" id="selectSlider" name="selectSlider" value="1" min="1" max="8" step="1">
+    <span id="season-selection">1</span>
+    <button id="play-button">Play</button>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <svg id="map" transform="translate(70,-27)"></svg>
+      <svg height="200" width="350" class="map_legend" transform="translate(-600,150)" id="map_legend"></svg>
+      <svg height="280" width="280" class="color_legend" transform="translate(-580,230)" id="color_legend"></svg>
+    </div>
+    <div class="col2">
+      <svg id="barchart" transform="translate(670,0)"></svg>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://d3js.org/topojson.v3.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="js/map/got_map.js"></script>
+  <script src="js/map/got_barchart.js"></script>
+  <script src="js/map/got_map_initialize.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GOT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Game of Thrones Kill Graph</h1>
+    <h3>Explore the links between killer and killed in this visualization of Game of Thrones'
+        major characters. An arrow originating from character A and pointing to character B
+        indicates character A killed character B. An isolated character with an arrow pointing
+        to themselves indicates death by suicide, accident, or natural causes. The donut graph
+        around each character indicates their favorite weapons of choice as a proportion of their
+        total weapons used for murder (inclusive of kills against
+        minor characters not shown in this diagram).
+    </h3>
+
+    <div class="kill-graph">
+        <button onclick="window.location.href = '/index.html'" id="link-button">Explore the Game of Thrones Death
+            Map/Chart</button>
+    </div>
+
+    <div class="slider">
+        <label id="season" for="selectSlider">Season</label>
+        <input type="range" id="selectSlider" name="selectSlider" value="1" min="1" max="8" step="1">
+        <span id="season-selection">1</span>
+    </div>
+
+    <div id="diagram-div">
+        <span>
+            <svg id="node-diagram"></svg>
+            <svg id="color-legend"></svg>
+        </span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="js/node_diagram/node_diagram.js"></script>
+    <script type="module" src="js/node_diagram/node_diagram_initialize.js"></script>
+</body>
+
+</html>

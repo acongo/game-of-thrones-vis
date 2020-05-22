@@ -1,0 +1,271 @@
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  margin: 0px;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: rgb(117, 135, 141);
+  transform: scale(0.85, 0.85);
+}
+
+h1 {
+  font: 40px;
+  text-align: center;
+  color: silver;
+  -webkit-text-stroke: 1px black;
+}
+
+h3 {
+  text-align: center;
+}
+
+.geo-path {
+  stroke: #272727;
+}
+
+text.labels {
+  stroke: black;
+  stroke-width: 0.5px;
+  fill: '#e2e1e1';
+  opacity: 1;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Georgia, serif;
+  font-style: oblique;
+}
+
+text.labels:hover {
+  font-size: 29px;
+  font-weight: 900;
+  fill: #e82424;
+  stroke: #e82424;
+  text-shadow: black;
+}
+
+.row {
+  display: flex;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.col2 {
+  position: absolute;
+  z-index: 2;
+}
+
+#barchart {
+  position: absolute;
+  z-index: 1;
+  border-radius: 20px 20px 20px 20px;
+}
+
+#barchart::after {
+  background: url(https://images5.alphacoders.com/403/thumb-1920-403408.jpg);
+  content: '';
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.slider {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#play-button {
+  background-color: silver;
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #555555;
+}
+
+#play-button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+image {
+  object-fit: fill;
+}
+
+/* Note: tooltip styling is based off of https://bl.ocks.org/mbostock/1087001 */
+.tooltip {
+  position: absolute;
+  width: 100px;
+  height: 12px;
+  margin-top: -20px;
+  font: 13px sans-serif;
+  font-weight: bold;
+  pointer-events: none;
+  color: red;
+}
+
+#diagram-div {
+  margin-top: 15px;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 2px;
+  font: 12px Georgia, serif;
+  background: rgb(190, 194, 171);
+  border: 1px;
+  color: black;
+  pointer-events: none;
+  z-index: 1000000;
+}
+
+.characterImage {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+text {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  stroke: rgb(19, 19, 19);
+  stroke-width: 1px;
+  font-weight: bolder;
+}
+
+#season-selection {
+  font-size: 30px;
+  color: silver;
+  stroke: black;
+  stroke-width: 1px;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-text-stroke: 1px black;
+}
+
+#season {
+  font-size: 30px;
+  color: silver;
+  font-weight: bolder;
+  -webkit-text-stroke: 1px black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.regionText {
+  fill: rgb(197, 5, 5);
+  stroke: black;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.legend-text {
+  fill: silver;
+  stroke: black;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+#color-legend {
+  vertical-align: top;
+  border-radius: 20%;
+  stroke: silver;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  margin-left: 20px;
+}
+
+.map_legend {
+  border-radius: 20%;
+  stroke: silver;
+  padding-bottom: 15px;
+  padding-top: 0px;
+}
+
+.color_legend {
+  border-radius: 20%;
+  stroke: silver;
+  padding-bottom: 15px;
+  padding-top: 0px;
+}
+
+#selectSlider {
+  -webkit-appearance: none;
+  width: 20%;
+  height: 10px;
+  border-radius: 20px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+#selectSlider:hover {
+  opacity: 1;
+}
+
+#selectSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: url('sword.png');
+  cursor: pointer;
+  background-size: cover;
+}
+
+#selectSlider::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  background: url('sword.png');
+  cursor: pointer;
+  background-size: cover;
+}
+
+.kill-graph {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#link-button {
+  background-color: silver;
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #555555;
+}
+
+#link-button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+line {
+  z-index: -1;
+}
