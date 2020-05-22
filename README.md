@@ -10,18 +10,6 @@ victim for the majority of the show's characters.
 2. Navigate to the cloned repository and run `http-server -p 5500`
 3. Open a web browser and navigate to `http://localhost:5500/`
 
-**_Primary Data Source_**
-
-https://data.world/datasaurusrex/game-of-thones-deaths/workspace/file?filename=Game%20of%20Thrones%20Deaths&fbclid=IwAR0uy-L5ggVSbr2OW0dvuZdrYf2aSFbac5gbPIdaFk5b1TForAe-e06zf9Y
-
-**_Game of Thrones Map Source_**
-
-https://www.cartographersguild.com/showthread.php?t=30472
-
-**_Game of Thrones Character Images Source_**
-
-https://github.com/jeffreylancaster/game-of-thrones/blob/master/data/characters.json
-
 ## References
 
 **_Primary Data Source_**
