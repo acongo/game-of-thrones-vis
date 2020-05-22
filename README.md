@@ -22,19 +22,31 @@ https://www.cartographersguild.com/showthread.php?t=30472
 
 https://github.com/jeffreylancaster/game-of-thrones/blob/master/data/characters.json
 
-## **_References_**
+## References
 
-**_Game of Thrones Death Map_**
+**_Primary Data Source_**
 
-data processing from shapefile to topoJSON done here: https://mapshaper.org/
+https://data.world/datasaurusrex/game-of-thones-deaths/workspace/file?filename=Game%20of%20Thrones%20Deaths&fbclid=IwAR0uy-L5ggVSbr2OW0dvuZdrYf2aSFbac5gbPIdaFk5b1TForAe-e06zf9Y
 
-drop down logic modeled from here: https://www.d3-graph-gallery.com/graph/line_filter.html
+**_Game of Thrones Map Source_**
 
-**_Game of Thrones Death Allegiance Bar Chart_**
+https://www.cartographersguild.com/showthread.php?t=30472
+
+**_Game of Thrones Character Images Source_**
+
+https://github.com/jeffreylancaster/game-of-thrones/blob/master/data/characters.json
+
+**_Game of Thrones Death Map References_**
+
+Data processing from shapefile to topoJSON done here: https://mapshaper.org/
+
+Drop down logic modeled from here: https://www.d3-graph-gallery.com/graph/line_filter.html
+
+**_Game of Thrones Death Allegiance Bar Chart Refernces_**
 
 No additional code was referenced/used
 
-**_Game of Thrones Kills Node Diagram ("Innovative View")_**
+**_Game of Thrones Kills Node Diagram References_**
 
 Starter code for the node diagram was based off of: https://observablehq.com/@d3/force-directed-graph?collection=@d3/d3-force
 
