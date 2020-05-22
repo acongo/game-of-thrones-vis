@@ -26,7 +26,7 @@ const nodeDiagramConfig = {
   legendElement: '#color-legend',
 };
 
-let nodeDiagrams = new NodeDiagram(nodeDiagramConfig);
+let nodeDiagram = new NodeDiagram(nodeDiagramConfig);
 let dataBySeason = {};
 
 d3.csv('data/game_of_thrones_deaths.csv').then((data) => {
@@ -43,11 +43,11 @@ d3.csv('data/game_of_thrones_deaths.csv').then((data) => {
     };
   }
 
-  nodeDiagrams.data = dataBySeason[selectedOption];
-  nodeDiagrams.characters = characterImages;
-  nodeDiagrams.methodGroups = methodGroups;
-  nodeDiagrams.methodColors = methodColors;
-  nodeDiagrams.update();
+  nodeDiagram.data = dataBySeason[selectedOption];
+  nodeDiagram.characters = characterImages;
+  nodeDiagram.methodGroups = methodGroups;
+  nodeDiagram.methodColors = methodColors;
+  nodeDiagram.update();
 });
 
 function getNodesAndLinks(killers) {
