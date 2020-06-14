@@ -2,7 +2,7 @@
 
 This project allows users to explore data visualizations related to the many deaths that occur on the hit HBO show Game of
 Thrones. It includes a linked choropleth map and bar chart as well as a node diagram showing the links between killer and
-victim for the majority of the show's characters.
+victim for the majority of the show's characters. For each visualization, users can explore the deaths that took place over a specific season using the slider near the top of the page.
 
 ## Setup
 
